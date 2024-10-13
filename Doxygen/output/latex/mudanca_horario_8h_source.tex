@@ -1,0 +1,31 @@
+\doxysection{mudanca\+Horario.\+h}
+\hypertarget{mudanca_horario_8h_source}{}\label{mudanca_horario_8h_source}\index{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/mudancaHorario.h@{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/mudancaHorario.h}}
+\mbox{\hyperlink{mudanca_horario_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ MUDANCAHORARIO\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ MUDANCAHORARIO\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{estudante_8h}{estudante.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{turma_8h}{turma.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{uc_8h}{uc.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pedido_8h}{pedido.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mudanca_horario}{MudancaHorario}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_bst}{Bst}}\ estudantes;}
+\DoxyCodeLine{00018\ \ \ \ \ queue<Pedido>\ pedidos;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_mudanca_horario}{MudancaHorario}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ inserirEstudantes(\mbox{\hyperlink{class_bst}{Bst}}\ \&estudantes);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ guardarPedidos(\textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ processarPedidos(list<Turma>\ \&turmas,\ list<Uc>\ \&UCs);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ pedidosNaoSatisfeitos(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&file);}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

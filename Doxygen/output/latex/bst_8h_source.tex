@@ -1,0 +1,55 @@
+\doxysection{bst.\+h}
+\hypertarget{bst_8h_source}{}\label{bst_8h_source}\index{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/bst.h@{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/bst.h}}
+\mbox{\hyperlink{bst_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ BINARYTREE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ BINARYTREE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{estudante_8h}{estudante.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbstree__node}{bstree\_node}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_estudante}{Estudante}}\ \mbox{\hyperlink{structbstree__node_a0d0a551412925cfc6acef8d5c6dc0fe4}{est}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *\mbox{\hyperlink{structbstree__node_a16b3315eb3da3cfc011bec504f02f1b1}{left}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *\mbox{\hyperlink{structbstree__node_a3bb1f0f9ef93e06df1f5180e6c9b707b}{right}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *\mbox{\hyperlink{structbstree__node_a4be3d8b3e1d575ecdb6879df3d49c937}{parent}}\ =\ \textcolor{keyword}{nullptr};\ }
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bst}{Bst}}\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *root;\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ size;\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ insert(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *new\_node,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *node);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ searchName(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *node);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ splice(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *source,\ \textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *target);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ destroy(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *node);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_bst_a96c0d408b76533bd61ecf9322315e1f2}{Bst}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_bst_a5779722190df31da910580a2b4ae2bb3}{\string~Bst}}();}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ insert(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_estudante}{Estudante}}\ \&est);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ searchName(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bst_a6db3b675f31021126c59e751f77a4771}{remove}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ \mbox{\hyperlink{class_bst_a8980620da505220294941eafba656d0c}{rootTree}}();}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ \mbox{\hyperlink{class_bst_a8e2922026c7645a5ea815aa12935694e}{minimum}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *tree\_root);}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ \mbox{\hyperlink{class_bst_a6c4a378dfe61daf9a6a5b766d723efdb}{maximum}}(\textcolor{keyword}{struct}\ \mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *tree\_root);}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bst_a440f4b9e7fd5d68f6ad54f82d51e312f}{sizeTree}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bst_a00a6dd7005fb6d27960ed9e5d1c43e3d}{isEmpty}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bst_a8e6ed39aa2b2f313d0b59a4f6c850b2d}{preOrder}}(\mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *node);}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bst_ae2f6110af18be70236922cfc4d300bd7}{inOrder}}(\mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *node);}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bst_a63d98b4d27c222c20289d55599d32d02}{postOrder}}(\mbox{\hyperlink{structbstree__node}{bstree\_node}}\ *node);}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bst_ab88fda42e7c26fd25e0ca073c86c3ec2}{estudMaisNAlf}}(\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ node,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bst_a26d61bf1e2ea110e219cb062bcf728ee}{estudMaisNUCs}}(\mbox{\hyperlink{structbstree__node}{bstree\_node}}*\ node,\ \textcolor{keywordtype}{int}\ n,\ list<pair<Estudante,int>>\ \&estds);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,29 @@
+\doxysection{uc.\+h}
+\hypertarget{uc_8h_source}{}\label{uc_8h_source}\index{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/uc.h@{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/uc.h}}
+\mbox{\hyperlink{uc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ UC\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ UC\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{turma_8h}{turma.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_uc}{Uc}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ ucCode;\ }
+\DoxyCodeLine{00020\ \ \ \ \ vector<Turma>\ classes;\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_uc}{Uc}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&ucCode,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_turma}{Turma}}\ \&turma);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_uc_a633ef57e70835ffad02718d7d4b26973}{getUcCode}}();}
+\DoxyCodeLine{00039\ \ \ \ \ vector<Turma>::iterator\ \mbox{\hyperlink{class_uc_a9789280acaedd69113e394f9c57353ac}{findClass}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&classCode);}
+\DoxyCodeLine{00044\ \ \ \ \ vector<Turma>::iterator\ \mbox{\hyperlink{class_uc_aec051e12917e5039acda4558620ac2ec}{classesEnd}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_uc_a1f862d97d59fdee0e66a7e9f58e93bc1}{addClasses}}(\mbox{\hyperlink{class_turma}{Turma}}\ turma);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_uc_a0062791bcce49c5a1647054abf0d7f86}{printClassesOcupacao}}(\textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

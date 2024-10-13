@@ -1,0 +1,130 @@
+\doxysection{Aula Class Reference}
+\hypertarget{class_aula}{}\label{class_aula}\index{Aula@{Aula}}
+
+
+Representa uma aula de uma unidade curricular.  
+
+
+
+
+{\ttfamily \#include $<$aula.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_aula_a8d76c855afa3252523e4ba97535bd2db}\label{class_aula_a8d76c855afa3252523e4ba97535bd2db} 
+{\bfseries Aula} ()
+\begin{DoxyCompactList}\small\item\em Construtor. Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_aula_aa89f5808e21a9e3e0dbd305d07aeb908}{Aula}} (const string \&uc\+Code, const string \&week\+Day, const \mbox{\hyperlink{class_hour}{Hour}} \&start\+Hour, const \mbox{\hyperlink{class_hour}{Hour}} \&duration, const string \&type)
+\begin{DoxyCompactList}\small\item\em Construtor. Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aula_aa19405732d573c7ba1a65c6a699cbbf4}{insert\+Info}} (const string \&week\+Day, const \mbox{\hyperlink{class_hour}{Hour}} \&start\+Hour, const \mbox{\hyperlink{class_hour}{Hour}} \&duration, const string \&type)
+\begin{DoxyCompactList}\small\item\em Insere informações da aula. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_aula_a5e4cda8ad77bc44893b9039a5841b752}{get\+Uc\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Pega o código da unidade curricular da aula. Complexidade O(1) \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{structinformation}{information}} $>$ \mbox{\hyperlink{class_aula_a621f321b35ed98a347ebee0fb4a580be}{get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Pega as informações da aula de uma unidade curricular. Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aula_aee14fb1e81a3c6c23882ec52cf457b85}{set\+Info}} (const \mbox{\hyperlink{structinformation}{information}} \&i)
+\begin{DoxyCompactList}\small\item\em Coloca informações da aula de uma unidade curricular. \end{DoxyCompactList}\item 
+\Hypertarget{class_aula_a16a8d5bfd49313b9546d4d62c315ddb4}\label{class_aula_a16a8d5bfd49313b9546d4d62c315ddb4} 
+void {\bfseries show\+Aula} ()
+\begin{DoxyCompactList}\small\item\em Printa a aula de uma unidade curricular. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa uma aula de uma unidade curricular. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_aula_aa89f5808e21a9e3e0dbd305d07aeb908}\label{class_aula_aa89f5808e21a9e3e0dbd305d07aeb908} 
+\index{Aula@{Aula}!Aula@{Aula}}
+\index{Aula@{Aula}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{Aula()}{Aula()}}
+{\footnotesize\ttfamily Aula\+::\+Aula (\begin{DoxyParamCaption}\item[{const string \&}]{uc\+Code,  }\item[{const string \&}]{week\+Day,  }\item[{const \mbox{\hyperlink{class_hour}{Hour}} \&}]{start\+Hour,  }\item[{const \mbox{\hyperlink{class_hour}{Hour}} \&}]{duration,  }\item[{const string \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Construtor. Complexidade O(1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uc\+Code} & Contém o código da Unidade Curricular. \\
+\hline
+{\em week\+Day} & Contém o dia da semana que ocorre a aula. \\
+\hline
+{\em start\+Hour} & Contém a hora que se inicia a aula. \\
+\hline
+{\em duration} & Contém a duração da aula. \\
+\hline
+{\em type} & Contém o tipo de aula. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aula_a621f321b35ed98a347ebee0fb4a580be}\label{class_aula_a621f321b35ed98a347ebee0fb4a580be} 
+\index{Aula@{Aula}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{structinformation}{information}} $>$ Aula\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega as informações da aula de uma unidade curricular. Complexidade O(1) 
+
+\begin{DoxyReturn}{Returns}
+Retorna um vetor de informações da aula. 
+\end{DoxyReturn}
+\Hypertarget{class_aula_a5e4cda8ad77bc44893b9039a5841b752}\label{class_aula_a5e4cda8ad77bc44893b9039a5841b752} 
+\index{Aula@{Aula}!getUcCode@{getUcCode}}
+\index{getUcCode@{getUcCode}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{getUcCode()}{getUcCode()}}
+{\footnotesize\ttfamily string Aula\+::get\+Uc\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o código da unidade curricular da aula. Complexidade O(1) 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma string contendo código da unidade curricular. 
+\end{DoxyReturn}
+\Hypertarget{class_aula_aa19405732d573c7ba1a65c6a699cbbf4}\label{class_aula_aa19405732d573c7ba1a65c6a699cbbf4} 
+\index{Aula@{Aula}!insertInfo@{insertInfo}}
+\index{insertInfo@{insertInfo}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{insertInfo()}{insertInfo()}}
+{\footnotesize\ttfamily void Aula\+::insert\+Info (\begin{DoxyParamCaption}\item[{const string \&}]{week\+Day,  }\item[{const \mbox{\hyperlink{class_hour}{Hour}} \&}]{start\+Hour,  }\item[{const \mbox{\hyperlink{class_hour}{Hour}} \&}]{duration,  }\item[{const string \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Insere informações da aula. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week\+Day} & Contém o dia da semana que ocorre a aula. \\
+\hline
+{\em start\+Hour} & Contém a hora que se inicia a aula. \\
+\hline
+{\em duration} & Contém a duração da aula. \\
+\hline
+{\em type} & Contém o tipo de aula. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_aula_aee14fb1e81a3c6c23882ec52cf457b85}\label{class_aula_aee14fb1e81a3c6c23882ec52cf457b85} 
+\index{Aula@{Aula}!setInfo@{setInfo}}
+\index{setInfo@{setInfo}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{setInfo()}{setInfo()}}
+{\footnotesize\ttfamily void Aula\+::set\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structinformation}{information}} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Coloca informações da aula de uma unidade curricular. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & contém a informação da aula a ser colocada. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/\mbox{\hyperlink{aula_8h}{aula.\+h}}\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/aula.\+cpp\end{DoxyCompactItemize}

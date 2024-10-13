@@ -1,0 +1,167 @@
+\doxysection{Turma Class Reference}
+\hypertarget{class_turma}{}\label{class_turma}\index{Turma@{Turma}}
+
+
+Representa uma turma.  
+
+
+
+
+{\ttfamily \#include $<$turma.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_turma_aad567537b1fcf7662ae14d7b428ee04c}{Turma}} (const string \&class\+Code, const \mbox{\hyperlink{class_horario}{Horario}} \&class\+Horario)
+\begin{DoxyCompactList}\small\item\em Construtor. Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_turma_aa3f8319c854a08ff13d8d6cb77ab4fbd}{Turma}} (const string \&class\+Code)
+\begin{DoxyCompactList}\small\item\em Construtor. Complexidade O(1) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_turma_afc0a4856408bc32aa882a7d5ae3f2d14}{get\+Class\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Pega o código da turma. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_horario}{Horario}} \mbox{\hyperlink{class_turma_a24695d592f0097527b424d300216d35e}{get\+Class\+Horario}} ()
+\begin{DoxyCompactList}\small\item\em Pega o horário da turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_ad059483d115112a55e4d67bd8c6f2cde}{set\+Class\+Horario}} (\mbox{\hyperlink{class_aula}{Aula}} \&aula)
+\begin{DoxyCompactList}\small\item\em Coloca uma aula no horário da turma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_turma_a501d6a8c8e343f67d2b1e7cce7df8efa}{get\+Ocupacao}} () const
+\begin{DoxyCompactList}\small\item\em Pega a ocupação da turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_turma_a43c02dcc7b39020adc3d3e26438c154c}{insert\+Estudante\+By\+Name}} (pair$<$ string, string $>$ estudante)
+\begin{DoxyCompactList}\small\item\em Insere um estudante na lista de estudantes da turma por ordem alfabética. \end{DoxyCompactList}\item 
+\Hypertarget{class_turma_a58735da8a7b9e5b596724d28776a41c2}\label{class_turma_a58735da8a7b9e5b596724d28776a41c2} 
+void {\bfseries print\+Estudante\+By\+Name} ()
+\begin{DoxyCompactList}\small\item\em Printa os estudantes da turma por ordem alfabética. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_turma_a5b62ab27fd79628a6f1ac0c72de1da99}{remove\+Estudante}} (pair$<$ string, string $>$ estudante)
+\begin{DoxyCompactList}\small\item\em Remove o estudante da turma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa uma turma. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_turma_aad567537b1fcf7662ae14d7b428ee04c}\label{class_turma_aad567537b1fcf7662ae14d7b428ee04c} 
+\index{Turma@{Turma}!Turma@{Turma}}
+\index{Turma@{Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{Turma()}{Turma()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Turma\+::\+Turma (\begin{DoxyParamCaption}\item[{const string \&}]{class\+Code,  }\item[{const \mbox{\hyperlink{class_horario}{Horario}} \&}]{class\+Horario }\end{DoxyParamCaption})}
+
+
+
+Construtor. Complexidade O(1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Code} & Contém o código da turma. \\
+\hline
+{\em class\+Horario} & Contém o horário da turma. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_turma_aa3f8319c854a08ff13d8d6cb77ab4fbd}\label{class_turma_aa3f8319c854a08ff13d8d6cb77ab4fbd} 
+\index{Turma@{Turma}!Turma@{Turma}}
+\index{Turma@{Turma}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{Turma()}{Turma()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Turma\+::\+Turma (\begin{DoxyParamCaption}\item[{const string \&}]{class\+Code }\end{DoxyParamCaption})}
+
+
+
+Construtor. Complexidade O(1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Code} & Contém o código da turma. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_turma_afc0a4856408bc32aa882a7d5ae3f2d14}\label{class_turma_afc0a4856408bc32aa882a7d5ae3f2d14} 
+\index{Turma@{Turma}!getClassCode@{getClassCode}}
+\index{getClassCode@{getClassCode}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getClassCode()}{getClassCode()}}
+{\footnotesize\ttfamily string Turma\+::get\+Class\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o código da turma. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma string contendo o código da turma. 
+\end{DoxyReturn}
+\Hypertarget{class_turma_a24695d592f0097527b424d300216d35e}\label{class_turma_a24695d592f0097527b424d300216d35e} 
+\index{Turma@{Turma}!getClassHorario@{getClassHorario}}
+\index{getClassHorario@{getClassHorario}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getClassHorario()}{getClassHorario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_horario}{Horario}} Turma\+::get\+Class\+Horario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o horário da turma. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um objeto da classe \doxylink{class_horario}{Horario} contendo o horário da turma. 
+\end{DoxyReturn}
+\Hypertarget{class_turma_a501d6a8c8e343f67d2b1e7cce7df8efa}\label{class_turma_a501d6a8c8e343f67d2b1e7cce7df8efa} 
+\index{Turma@{Turma}!getOcupacao@{getOcupacao}}
+\index{getOcupacao@{getOcupacao}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{getOcupacao()}{getOcupacao()}}
+{\footnotesize\ttfamily int Turma\+::get\+Ocupacao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pega a ocupação da turma. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um inteiro contendo a ocupação da turma. 
+\end{DoxyReturn}
+\Hypertarget{class_turma_a43c02dcc7b39020adc3d3e26438c154c}\label{class_turma_a43c02dcc7b39020adc3d3e26438c154c} 
+\index{Turma@{Turma}!insertEstudanteByName@{insertEstudanteByName}}
+\index{insertEstudanteByName@{insertEstudanteByName}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{insertEstudanteByName()}{insertEstudanteByName()}}
+{\footnotesize\ttfamily void Turma\+::insert\+Estudante\+By\+Name (\begin{DoxyParamCaption}\item[{pair$<$ string, string $>$}]{estudante }\end{DoxyParamCaption})}
+
+
+
+Insere um estudante na lista de estudantes da turma por ordem alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em estudante} & Contém o estudante a ser adicionado a turma. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_turma_a5b62ab27fd79628a6f1ac0c72de1da99}\label{class_turma_a5b62ab27fd79628a6f1ac0c72de1da99} 
+\index{Turma@{Turma}!removeEstudante@{removeEstudante}}
+\index{removeEstudante@{removeEstudante}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{removeEstudante()}{removeEstudante()}}
+{\footnotesize\ttfamily bool Turma\+::remove\+Estudante (\begin{DoxyParamCaption}\item[{pair$<$ string, string $>$}]{estudante }\end{DoxyParamCaption})}
+
+
+
+Remove o estudante da turma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em estudante} & Contém a informação do estudante a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna true se o estudando for removido e false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_turma_ad059483d115112a55e4d67bd8c6f2cde}\label{class_turma_ad059483d115112a55e4d67bd8c6f2cde} 
+\index{Turma@{Turma}!setClassHorario@{setClassHorario}}
+\index{setClassHorario@{setClassHorario}!Turma@{Turma}}
+\doxysubsubsection{\texorpdfstring{setClassHorario()}{setClassHorario()}}
+{\footnotesize\ttfamily void Turma\+::set\+Class\+Horario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_aula}{Aula}} \&}]{aula }\end{DoxyParamCaption})}
+
+
+
+Coloca uma aula no horário da turma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aula} & Contém a aula que será adicionada ao horário da turma. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/\mbox{\hyperlink{turma_8h}{turma.\+h}}\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/turma.\+cpp\end{DoxyCompactItemize}

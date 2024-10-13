@@ -1,0 +1,72 @@
+\doxysection{/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/functions.h File Reference}
+\hypertarget{functions_8h}{}\label{functions_8h}\index{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/functions.h@{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/functions.h}}
+{\ttfamily \#include \"{}menu.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{functions_8h_a9580b47ddc27bd8fc617f86eb781e5df}{read\+Classes\+Data}} (list$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$ \&turmas, list$<$ \mbox{\hyperlink{class_uc}{Uc}} $>$ \&UCs, const string \&file)
+\begin{DoxyCompactList}\small\item\em Função para ler ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_ae06ae729e3f0ce4fc8cc8cd2e8554074}{read\+Students\+Data}} (list$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$ \&turmas, \mbox{\hyperlink{class_bst}{Bst}} \&estudantes, list$<$ \mbox{\hyperlink{class_uc}{Uc}} $>$ \&UCs, const string \&file)
+\begin{DoxyCompactList}\small\item\em Função para ler ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a91098898beebc6366dd88d26229bd179}{read\+Classes\+Per\+Uc}} (list$<$ \mbox{\hyperlink{class_uc}{Uc}} $>$ \&UCs, const string \&file)
+\begin{DoxyCompactList}\small\item\em Função para ler ficheiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{functions_8h_a9580b47ddc27bd8fc617f86eb781e5df}\label{functions_8h_a9580b47ddc27bd8fc617f86eb781e5df} 
+\index{functions.h@{functions.h}!readClassesData@{readClassesData}}
+\index{readClassesData@{readClassesData}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{readClassesData()}{readClassesData()}}
+{\footnotesize\ttfamily void read\+Classes\+Data (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$ \&}]{turmas,  }\item[{list$<$ \mbox{\hyperlink{class_uc}{Uc}} $>$ \&}]{UCs,  }\item[{const string \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Função para ler ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turmas} & Contém uma lista de turmas a ser preenchida pelo ficheiro. \\
+\hline
+{\em UCs} & Contém uma lista de unidades curriculares. \\
+\hline
+{\em file} & Contém o nome do ficheiro csv. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{functions_8h_a91098898beebc6366dd88d26229bd179}\label{functions_8h_a91098898beebc6366dd88d26229bd179} 
+\index{functions.h@{functions.h}!readClassesPerUc@{readClassesPerUc}}
+\index{readClassesPerUc@{readClassesPerUc}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{readClassesPerUc()}{readClassesPerUc()}}
+{\footnotesize\ttfamily void read\+Classes\+Per\+Uc (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_uc}{Uc}} $>$ \&}]{UCs,  }\item[{const string \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Função para ler ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em UCs} & contém uma lista de unidades curriculares a ser preenchida pelo ficheiro. \\
+\hline
+{\em file} & Contém o nome do ficheiro csv. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{functions_8h_ae06ae729e3f0ce4fc8cc8cd2e8554074}\label{functions_8h_ae06ae729e3f0ce4fc8cc8cd2e8554074} 
+\index{functions.h@{functions.h}!readStudentsData@{readStudentsData}}
+\index{readStudentsData@{readStudentsData}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{readStudentsData()}{readStudentsData()}}
+{\footnotesize\ttfamily void read\+Students\+Data (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$ \&}]{turmas,  }\item[{\mbox{\hyperlink{class_bst}{Bst}} \&}]{estudantes,  }\item[{list$<$ \mbox{\hyperlink{class_uc}{Uc}} $>$ \&}]{UCs,  }\item[{const string \&}]{file }\end{DoxyParamCaption})}
+
+
+
+Função para ler ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turmas} & contém uma lista de turmas para relacionar aos estudantes. \\
+\hline
+{\em estudantes} & contém uma bst a ser preenchida com estudantes pelo ficheiro. \\
+\hline
+{\em UCs} & contém uma lista de unidades curriculares para relacionar aos estudantes. \\
+\hline
+{\em file} & Contém o nome do ficheiro csv. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,38 @@
+\doxysection{turma.\+h}
+\hypertarget{turma_8h_source}{}\label{turma_8h_source}\index{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/turma.h@{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/turma.h}}
+\mbox{\hyperlink{turma_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TURMA\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TURMA\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{estudante_8h}{estudante.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{horario_8h}{horario.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_turma}{Turma}}\ \{}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{string}\ classCode;\ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_horario}{Horario}}\ classHorario;\ }
+\DoxyCodeLine{00025\ \ \ \ \ list<pair<string,string>>\ estudantes;\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ capacidade;\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_turma}{Turma}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&classCode,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_horario}{Horario}}\ \&classHorario);}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_turma}{Turma}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&classCode);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_turma_afc0a4856408bc32aa882a7d5ae3f2d14}{getClassCode}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_horario}{Horario}}\ \mbox{\hyperlink{class_turma_a24695d592f0097527b424d300216d35e}{getClassHorario}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_turma_ad059483d115112a55e4d67bd8c6f2cde}{setClassHorario}}(\mbox{\hyperlink{class_aula}{Aula}}\ \&aula);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_turma_a501d6a8c8e343f67d2b1e7cce7df8efa}{getOcupacao}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_turma_a43c02dcc7b39020adc3d3e26438c154c}{insertEstudanteByName}}(pair<string,string>\ estudante);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_turma_a58735da8a7b9e5b596724d28776a41c2}{printEstudanteByName}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_turma_a5b62ab27fd79628a6f1ac0c72de1da99}{removeEstudante}}(pair<string,string>\ estudante);}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

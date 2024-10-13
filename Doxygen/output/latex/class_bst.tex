@@ -1,0 +1,265 @@
+\doxysection{Bst Class Reference}
+\hypertarget{class_bst}{}\label{class_bst}\index{Bst@{Bst}}
+
+
+Representa a bst de estudante.  
+
+
+
+
+{\ttfamily \#include $<$bst.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_bst_a96c0d408b76533bd61ecf9322315e1f2}\label{class_bst_a96c0d408b76533bd61ecf9322315e1f2} 
+{\bfseries Bst} ()
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+\Hypertarget{class_bst_a5779722190df31da910580a2b4ae2bb3}\label{class_bst_a5779722190df31da910580a2b4ae2bb3} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Bst} ()
+\begin{DoxyCompactList}\small\item\em Destruidor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bst_ac2bab62d9b6feaa0c2a80761d6f65203}{insert}} (const \mbox{\hyperlink{class_estudante}{Estudante}} \&est)
+\begin{DoxyCompactList}\small\item\em Insere um novo estudante na árvore. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bst_a2df833560db377104560d1d1970be1d8}{search\+Name}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Procura pelo nó que terá o estudante de mesmo nome do procurado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bst_a6db3b675f31021126c59e751f77a4771}{remove}} (const string \&name)
+\begin{DoxyCompactList}\small\item\em Remove um estudante da árvore. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bst_a8980620da505220294941eafba656d0c}{root\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Pega o nó raiz da árvore. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bst_a8e2922026c7645a5ea815aa12935694e}{minimum}} (struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}tree\+\_\+root)
+\begin{DoxyCompactList}\small\item\em Busca o estudante com nome de menor ordem alfabética. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bst_a6c4a378dfe61daf9a6a5b766d723efdb}{maximum}} (struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}tree\+\_\+root)
+\begin{DoxyCompactList}\small\item\em Busca o estudante com nome de maior ordem alfabética. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bst_a440f4b9e7fd5d68f6ad54f82d51e312f}{size\+Tree}} () const
+\begin{DoxyCompactList}\small\item\em Informa a quantidade de estudantes na árvore. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bst_a00a6dd7005fb6d27960ed9e5d1c43e3d}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Informa se a árvore está vazia. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bst_a8e6ed39aa2b2f313d0b59a4f6c850b2d}{pre\+Order}} (\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em Imprime o nome dos estudantes na ordem de precedência a partir da raiz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bst_ae2f6110af18be70236922cfc4d300bd7}{in\+Order}} (\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em Imprime os estudantes em ordem alfabética. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bst_a63d98b4d27c222c20289d55599d32d02}{post\+Order}} (\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}node)
+\begin{DoxyCompactList}\small\item\em Imprime o nome dos estudantes dando preferência para nós filhos antes de nós pais. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bst_ab88fda42e7c26fd25e0ca073c86c3ec2}{estud\+Mais\+NAlf}} (\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}node, int n)
+\begin{DoxyCompactList}\small\item\em Verifica os estudantes com mais de n unidades curriculares e imprime em ordem alfabética. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bst_a26d61bf1e2ea110e219cb062bcf728ee}{estud\+Mais\+NUCs}} (\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}node, int n, list$<$ pair$<$ \mbox{\hyperlink{class_estudante}{Estudante}}, int $>$ $>$ \&estds)
+\begin{DoxyCompactList}\small\item\em Verifica os estudantes com mais de n unidades curriculares e adiciona numa lista em ordem decrescente de número de unidades curriculares. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa a bst de estudante. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bst_ab88fda42e7c26fd25e0ca073c86c3ec2}\label{class_bst_ab88fda42e7c26fd25e0ca073c86c3ec2} 
+\index{Bst@{Bst}!estudMaisNAlf@{estudMaisNAlf}}
+\index{estudMaisNAlf@{estudMaisNAlf}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{estudMaisNAlf()}{estudMaisNAlf()}}
+{\footnotesize\ttfamily void Bst\+::estud\+Mais\+NAlf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{node,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Verifica os estudantes com mais de n unidades curriculares e imprime em ordem alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Contém o ponteiro para o nó base. \\
+\hline
+{\em n} & Contém a quantidade de unidades curriculares que os estudantes precisam ter a mais. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bst_a26d61bf1e2ea110e219cb062bcf728ee}\label{class_bst_a26d61bf1e2ea110e219cb062bcf728ee} 
+\index{Bst@{Bst}!estudMaisNUCs@{estudMaisNUCs}}
+\index{estudMaisNUCs@{estudMaisNUCs}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{estudMaisNUCs()}{estudMaisNUCs()}}
+{\footnotesize\ttfamily void Bst\+::estud\+Mais\+NUCs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{node,  }\item[{int}]{n,  }\item[{list$<$ pair$<$ \mbox{\hyperlink{class_estudante}{Estudante}}, int $>$ $>$ \&}]{estds }\end{DoxyParamCaption})}
+
+
+
+Verifica os estudantes com mais de n unidades curriculares e adiciona numa lista em ordem decrescente de número de unidades curriculares. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Contém o ponteiro para o nó base. \\
+\hline
+{\em n} & Contém a quantidade de unidades curriculares que os estudantes precisam estar cursando a mais. \\
+\hline
+{\em estds} & Contém a lista de pair(estudante, número de unidades curriculares) que será preenchida em ordem decrescente de número de unidade curricular. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bst_ae2f6110af18be70236922cfc4d300bd7}\label{class_bst_ae2f6110af18be70236922cfc4d300bd7} 
+\index{Bst@{Bst}!inOrder@{inOrder}}
+\index{inOrder@{inOrder}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{inOrder()}{inOrder()}}
+{\footnotesize\ttfamily void Bst\+::in\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})}
+
+
+
+Imprime os estudantes em ordem alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Contém o ponteiro para o nó base. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bst_ac2bab62d9b6feaa0c2a80761d6f65203}\label{class_bst_ac2bab62d9b6feaa0c2a80761d6f65203} 
+\index{Bst@{Bst}!insert@{insert}}
+\index{insert@{insert}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Bst\+::insert (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estudante}{Estudante}} \&}]{est }\end{DoxyParamCaption})}
+
+
+
+Insere um novo estudante na árvore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em est} & Contém o estudante a ser inserido na árvore. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bst_a00a6dd7005fb6d27960ed9e5d1c43e3d}\label{class_bst_a00a6dd7005fb6d27960ed9e5d1c43e3d} 
+\index{Bst@{Bst}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Bst\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Informa se a árvore está vazia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um bool que será true se a árvore estiver vazia e false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_bst_a6c4a378dfe61daf9a6a5b766d723efdb}\label{class_bst_a6c4a378dfe61daf9a6a5b766d723efdb} 
+\index{Bst@{Bst}!maximum@{maximum}}
+\index{maximum@{maximum}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{maximum()}{maximum()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} Bst\+::maximum (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{tree\+\_\+root }\end{DoxyParamCaption})}
+
+
+
+Busca o estudante com nome de maior ordem alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+\_\+root} & Contém o ponteiro para o nó base da procura. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o ponteiro para o nó que tem o estudante com nome de maior ordem alfabética. 
+\end{DoxyReturn}
+\Hypertarget{class_bst_a8e2922026c7645a5ea815aa12935694e}\label{class_bst_a8e2922026c7645a5ea815aa12935694e} 
+\index{Bst@{Bst}!minimum@{minimum}}
+\index{minimum@{minimum}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{minimum()}{minimum()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} Bst\+::minimum (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{tree\+\_\+root }\end{DoxyParamCaption})}
+
+
+
+Busca o estudante com nome de menor ordem alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+\_\+root} & Contém o ponteiro para o nó base da procura. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o ponteiro para o nó que tem o estudante com nome de menor ordem alfabética. 
+\end{DoxyReturn}
+\Hypertarget{class_bst_a63d98b4d27c222c20289d55599d32d02}\label{class_bst_a63d98b4d27c222c20289d55599d32d02} 
+\index{Bst@{Bst}!postOrder@{postOrder}}
+\index{postOrder@{postOrder}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{postOrder()}{postOrder()}}
+{\footnotesize\ttfamily void Bst\+::post\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})}
+
+
+
+Imprime o nome dos estudantes dando preferência para nós filhos antes de nós pais. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Contém o ponteiro para o nó base. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bst_a8e6ed39aa2b2f313d0b59a4f6c850b2d}\label{class_bst_a8e6ed39aa2b2f313d0b59a4f6c850b2d} 
+\index{Bst@{Bst}!preOrder@{preOrder}}
+\index{preOrder@{preOrder}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{preOrder()}{preOrder()}}
+{\footnotesize\ttfamily void Bst\+::pre\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*}}]{node }\end{DoxyParamCaption})}
+
+
+
+Imprime o nome dos estudantes na ordem de precedência a partir da raiz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Contém o ponteiro para o nó base. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bst_a6db3b675f31021126c59e751f77a4771}\label{class_bst_a6db3b675f31021126c59e751f77a4771} 
+\index{Bst@{Bst}!remove@{remove}}
+\index{remove@{remove}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily bool Bst\+::remove (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Remove um estudante da árvore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Contém o nome do estudante a ser removido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna um bool que será true se o estudante for encontrado e falso caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_bst_a8980620da505220294941eafba656d0c}\label{class_bst_a8980620da505220294941eafba656d0c} 
+\index{Bst@{Bst}!rootTree@{rootTree}}
+\index{rootTree@{rootTree}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{rootTree()}{rootTree()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} Bst\+::root\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o nó raiz da árvore. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um ponteiro para o nó raiz da árvore. 
+\end{DoxyReturn}
+\Hypertarget{class_bst_a2df833560db377104560d1d1970be1d8}\label{class_bst_a2df833560db377104560d1d1970be1d8} 
+\index{Bst@{Bst}!searchName@{searchName}}
+\index{searchName@{searchName}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{searchName()}{searchName()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbstree__node}{bstree\+\_\+node}} \texorpdfstring{$\ast$}{*} Bst\+::search\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Procura pelo nó que terá o estudante de mesmo nome do procurado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Contém o nome do estudante a ser procurado na árvore. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna um ponteiro para o nó que tenha o estudante com nome procurado ou um ponteiro nulo caso não encontre. 
+\end{DoxyReturn}
+\Hypertarget{class_bst_a440f4b9e7fd5d68f6ad54f82d51e312f}\label{class_bst_a440f4b9e7fd5d68f6ad54f82d51e312f} 
+\index{Bst@{Bst}!sizeTree@{sizeTree}}
+\index{sizeTree@{sizeTree}!Bst@{Bst}}
+\doxysubsubsection{\texorpdfstring{sizeTree()}{sizeTree()}}
+{\footnotesize\ttfamily int Bst\+::size\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Informa a quantidade de estudantes na árvore. 
+
+\begin{DoxyReturn}{Returns}
+Retorna um inteiro que contém o valor da quantidade de estudantes na árvore. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/\mbox{\hyperlink{bst_8h}{bst.\+h}}\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/bst.\+cpp\end{DoxyCompactItemize}

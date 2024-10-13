@@ -1,0 +1,132 @@
+\doxysection{Estudante Class Reference}
+\hypertarget{class_estudante}{}\label{class_estudante}\index{Estudante@{Estudante}}
+
+
+Representa um estudante.  
+
+
+
+
+{\ttfamily \#include $<$estudante.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_estudante_a26aa38bfd58015ae22b711f3be27aa22}\label{class_estudante_a26aa38bfd58015ae22b711f3be27aa22} 
+{\bfseries Estudante} ()
+\begin{DoxyCompactList}\small\item\em Construtor. Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_estudante_adccce8694d9e48ea6ad1dd26a2dd626d}{Estudante}} (const string \&student\+Code, const string \&student\+Name, const \mbox{\hyperlink{class_horario}{Horario}} \&student\+Horario, const string \&Student\+Class\+Code)
+\begin{DoxyCompactList}\small\item\em Construtor. Complexidade O(1) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_estudante_affa58d5a29f2262bf32fe220a649b42a}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Pega o nome de um estudante. Complexidade O(1) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_horario}{Horario}} \mbox{\hyperlink{class_estudante_afd1962dd2f1e70167c07faa2ac034295}{get\+Horario}} ()
+\begin{DoxyCompactList}\small\item\em Pega o horário do estudante. Complexidade O(1) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_estudante_a7aa2afae1be5f5a00e6b06a36d1f9df1}{get\+Student\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Pega o código do estudante. Complexidade O(1) \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_estudante_af1b2a8c788382e10c2b0cddcf98fbf82}{get\+Student\+Class\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Pega o código das turmas que o estudante está inscrito. Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_estudante_a4c27b8db980ac6c584ed07115dc79e64}{set\+Student\+Horario}} (const vector$<$ \mbox{\hyperlink{class_aula}{Aula}} $>$ \&aulas)
+\begin{DoxyCompactList}\small\item\em Coloca aulas no horário do estudante. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um estudante. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_estudante_adccce8694d9e48ea6ad1dd26a2dd626d}\label{class_estudante_adccce8694d9e48ea6ad1dd26a2dd626d} 
+\index{Estudante@{Estudante}!Estudante@{Estudante}}
+\index{Estudante@{Estudante}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{Estudante()}{Estudante()}}
+{\footnotesize\ttfamily Estudante\+::\+Estudante (\begin{DoxyParamCaption}\item[{const string \&}]{student\+Code,  }\item[{const string \&}]{student\+Name,  }\item[{const \mbox{\hyperlink{class_horario}{Horario}} \&}]{student\+Horario,  }\item[{const string \&}]{Student\+Class\+Code }\end{DoxyParamCaption})}
+
+
+
+Construtor. Complexidade O(1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+Code} & Contém o código do estudante. \\
+\hline
+{\em student\+Name} & Contém o nome do estudante. \\
+\hline
+{\em student\+Horario} & Contém o horário do estudante. \\
+\hline
+{\em Student\+Class\+Code} & Contém as turmas em que o estudante está inscrito. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_estudante_afd1962dd2f1e70167c07faa2ac034295}\label{class_estudante_afd1962dd2f1e70167c07faa2ac034295} 
+\index{Estudante@{Estudante}!getHorario@{getHorario}}
+\index{getHorario@{getHorario}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getHorario()}{getHorario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_horario}{Horario}} Estudante\+::get\+Horario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o horário do estudante. Complexidade O(1) 
+
+\begin{DoxyReturn}{Returns}
+Retorna um objeto da classe \doxylink{class_horario}{Horario} contendo o horário do estudante. 
+\end{DoxyReturn}
+\Hypertarget{class_estudante_affa58d5a29f2262bf32fe220a649b42a}\label{class_estudante_affa58d5a29f2262bf32fe220a649b42a} 
+\index{Estudante@{Estudante}!getName@{getName}}
+\index{getName@{getName}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Estudante\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o nome de um estudante. Complexidade O(1) 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma string contendo o nome do estudante. 
+\end{DoxyReturn}
+\Hypertarget{class_estudante_af1b2a8c788382e10c2b0cddcf98fbf82}\label{class_estudante_af1b2a8c788382e10c2b0cddcf98fbf82} 
+\index{Estudante@{Estudante}!getStudentClassCode@{getStudentClassCode}}
+\index{getStudentClassCode@{getStudentClassCode}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getStudentClassCode()}{getStudentClassCode()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Estudante\+::get\+Student\+Class\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o código das turmas que o estudante está inscrito. Complexidade O(1) 
+
+\begin{DoxyReturn}{Returns}
+Retorna um vetor de string contendo o código das turmas do estudante. 
+\end{DoxyReturn}
+\Hypertarget{class_estudante_a7aa2afae1be5f5a00e6b06a36d1f9df1}\label{class_estudante_a7aa2afae1be5f5a00e6b06a36d1f9df1} 
+\index{Estudante@{Estudante}!getStudentCode@{getStudentCode}}
+\index{getStudentCode@{getStudentCode}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getStudentCode()}{getStudentCode()}}
+{\footnotesize\ttfamily string Estudante\+::get\+Student\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o código do estudante. Complexidade O(1) 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma string contendo o código do estudante. 
+\end{DoxyReturn}
+\Hypertarget{class_estudante_a4c27b8db980ac6c584ed07115dc79e64}\label{class_estudante_a4c27b8db980ac6c584ed07115dc79e64} 
+\index{Estudante@{Estudante}!setStudentHorario@{setStudentHorario}}
+\index{setStudentHorario@{setStudentHorario}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{setStudentHorario()}{setStudentHorario()}}
+{\footnotesize\ttfamily void Estudante\+::set\+Student\+Horario (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_aula}{Aula}} $>$ \&}]{aulas }\end{DoxyParamCaption})}
+
+
+
+Coloca aulas no horário do estudante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aulas} & contém um vetor com as aulas que serão adicionadas ao horário do estudante. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/\mbox{\hyperlink{estudante_8h}{estudante.\+h}}\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/estudante.\+cpp\end{DoxyCompactItemize}

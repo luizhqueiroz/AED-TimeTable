@@ -1,0 +1,132 @@
+\doxysection{Uc Class Reference}
+\hypertarget{class_uc}{}\label{class_uc}\index{Uc@{Uc}}
+
+
+Representa uma Unidade Curricular.  
+
+
+
+
+{\ttfamily \#include $<$uc.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_uc_a3dc7ee1e17389fe11a7418989eb9159b}{Uc}} (const string \&uc\+Code, const \mbox{\hyperlink{class_turma}{Turma}} \&turma)
+\begin{DoxyCompactList}\small\item\em Construtor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_uc_a633ef57e70835ffad02718d7d4b26973}{get\+Uc\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Pega o código da unidade curricular. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$\+::iterator \mbox{\hyperlink{class_uc_a9789280acaedd69113e394f9c57353ac}{find\+Class}} (const string \&class\+Code)
+\begin{DoxyCompactList}\small\item\em Procura a turma com determinado código de turma entre as turmas que possuem a unidade curricular. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$\+::iterator \mbox{\hyperlink{class_uc_aec051e12917e5039acda4558620ac2ec}{classes\+End}} ()
+\begin{DoxyCompactList}\small\item\em Pega o iterador para o fim do vetor de turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uc_a1f862d97d59fdee0e66a7e9f58e93bc1}{add\+Classes}} (\mbox{\hyperlink{class_turma}{Turma}} turma)
+\begin{DoxyCompactList}\small\item\em Adiciona uma turma ao vetor de turma por ordem crescente do código da turma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_uc_a0062791bcce49c5a1647054abf0d7f86}{print\+Classes\+Ocupacao}} (int i)
+\begin{DoxyCompactList}\small\item\em Printa as turmas e sua ocupação por ordem crescente ou decrescente do código da turma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa uma Unidade Curricular. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_uc_a3dc7ee1e17389fe11a7418989eb9159b}\label{class_uc_a3dc7ee1e17389fe11a7418989eb9159b} 
+\index{Uc@{Uc}!Uc@{Uc}}
+\index{Uc@{Uc}!Uc@{Uc}}
+\doxysubsubsection{\texorpdfstring{Uc()}{Uc()}}
+{\footnotesize\ttfamily Uc\+::\+Uc (\begin{DoxyParamCaption}\item[{const string \&}]{uc\+Code,  }\item[{const \mbox{\hyperlink{class_turma}{Turma}} \&}]{turma }\end{DoxyParamCaption})}
+
+
+
+Construtor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uc\+Code} & Contém o código da unidade curricular. \\
+\hline
+{\em turma} & Contém a turma que contém a unidade curricular. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_uc_a1f862d97d59fdee0e66a7e9f58e93bc1}\label{class_uc_a1f862d97d59fdee0e66a7e9f58e93bc1} 
+\index{Uc@{Uc}!addClasses@{addClasses}}
+\index{addClasses@{addClasses}!Uc@{Uc}}
+\doxysubsubsection{\texorpdfstring{addClasses()}{addClasses()}}
+{\footnotesize\ttfamily void Uc\+::add\+Classes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_turma}{Turma}}}]{turma }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma turma ao vetor de turma por ordem crescente do código da turma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turma} & Contém a turma que será adicionada ao vetor de turma. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_uc_aec051e12917e5039acda4558620ac2ec}\label{class_uc_aec051e12917e5039acda4558620ac2ec} 
+\index{Uc@{Uc}!classesEnd@{classesEnd}}
+\index{classesEnd@{classesEnd}!Uc@{Uc}}
+\doxysubsubsection{\texorpdfstring{classesEnd()}{classesEnd()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$\+::iterator Uc\+::classes\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o iterador para o fim do vetor de turma. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o iterador para o fim do vetor de turma. 
+\end{DoxyReturn}
+\Hypertarget{class_uc_a9789280acaedd69113e394f9c57353ac}\label{class_uc_a9789280acaedd69113e394f9c57353ac} 
+\index{Uc@{Uc}!findClass@{findClass}}
+\index{findClass@{findClass}!Uc@{Uc}}
+\doxysubsubsection{\texorpdfstring{findClass()}{findClass()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_turma}{Turma}} $>$\+::iterator Uc\+::find\+Class (\begin{DoxyParamCaption}\item[{const string \&}]{class\+Code }\end{DoxyParamCaption})}
+
+
+
+Procura a turma com determinado código de turma entre as turmas que possuem a unidade curricular. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Code} & Contém o código da turma que será pesquisada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna, se a turma for encontra, o iterador para turma procurada dentro do vetor de turma. Caso contrário, retorna o iterador para o fim desse vetor. 
+\end{DoxyReturn}
+\Hypertarget{class_uc_a633ef57e70835ffad02718d7d4b26973}\label{class_uc_a633ef57e70835ffad02718d7d4b26973} 
+\index{Uc@{Uc}!getUcCode@{getUcCode}}
+\index{getUcCode@{getUcCode}!Uc@{Uc}}
+\doxysubsubsection{\texorpdfstring{getUcCode()}{getUcCode()}}
+{\footnotesize\ttfamily string Uc\+::get\+Uc\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pega o código da unidade curricular. 
+
+\begin{DoxyReturn}{Returns}
+Retorna uma string com o código da unidade curricular. 
+\end{DoxyReturn}
+\Hypertarget{class_uc_a0062791bcce49c5a1647054abf0d7f86}\label{class_uc_a0062791bcce49c5a1647054abf0d7f86} 
+\index{Uc@{Uc}!printClassesOcupacao@{printClassesOcupacao}}
+\index{printClassesOcupacao@{printClassesOcupacao}!Uc@{Uc}}
+\doxysubsubsection{\texorpdfstring{printClassesOcupacao()}{printClassesOcupacao()}}
+{\footnotesize\ttfamily void Uc\+::print\+Classes\+Ocupacao (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Printa as turmas e sua ocupação por ordem crescente ou decrescente do código da turma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Contém o valor que define se as turmas serão printadas por ordem crescente ou decrescente do código da turma. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/\mbox{\hyperlink{uc_8h}{uc.\+h}}\item 
+/\+Users/luizqueiroz/\+Desktop/\+AED-\/\+Time\+Table/\+Classes/uc.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,40 @@
+\doxysection{aula.\+h}
+\hypertarget{aula_8h_source}{}\label{aula_8h_source}\index{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/aula.h@{/Users/luizqueiroz/Desktop/AED-\/TimeTable/Classes/aula.h}}
+\mbox{\hyperlink{aula_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ AULA\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ AULA\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{hour_8h}{hour.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structinformation}{information}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structinformation_a4ce79b082f436146d07b1a0e314ca8ed}{weekDay}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_hour}{Hour}}\ \mbox{\hyperlink{structinformation_a2f36d3ced54aa1dc1f71b0189ea2a1fa}{startHour}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_hour}{Hour}}\ \mbox{\hyperlink{structinformation_a19adb60ab6960d5e0c8c5226d690d96d}{duration}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{structinformation_a5d5c36d42e9a3e719fa827fe3b30d946}{type}};\ }
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_aula}{Aula}}\ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{string}\ ucCode;\ }
+\DoxyCodeLine{00034\ \ \ \ \ vector<information>\ info;\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_aula_a8d76c855afa3252523e4ba97535bd2db}{Aula}}();}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_aula_a8d76c855afa3252523e4ba97535bd2db}{Aula}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&ucCode,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&weekDay,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_hour}{Hour}}\ \&startHour,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_hour}{Hour}}\ \&duration,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&type);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aula_aa19405732d573c7ba1a65c6a699cbbf4}{insertInfo}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&weekDay,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_hour}{Hour}}\ \&startHour,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_hour}{Hour}}\ \&duration,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&type);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_aula_a5e4cda8ad77bc44893b9039a5841b752}{getUcCode}}();}
+\DoxyCodeLine{00071\ \ \ \ \ vector<information>\ \mbox{\hyperlink{class_aula_a621f321b35ed98a347ebee0fb4a580be}{getInfo}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aula_aee14fb1e81a3c6c23882ec52cf457b85}{setInfo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structinformation}{information}}\ \&i);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_aula_a16a8d5bfd49313b9546d4d62c315ddb4}{showAula}}();}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
